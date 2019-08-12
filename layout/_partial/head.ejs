@@ -44,6 +44,10 @@
     <% if (theme.direction) { %>
       <%- css('css/rtl') %>
     <% } %>
+    <!-- google adsense -->
+    <% if (is_post()) { %>
+      <%- partial('_partial/adsense') %>
+    <% } %>
     <!-- rss -->
     <% if (theme.rss === '' && config.feed && config.feed.path) { %>
       <% theme.rss = config.feed.path %>
