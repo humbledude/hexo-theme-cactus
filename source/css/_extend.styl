@@ -105,11 +105,18 @@ $base-style
 
   th
     padding: 8px
-    border-bottom: 1px dashed $color-code-border
+    border-bottom: 1px solid $color-border
     color: $color-accent-2
     font-weight: bold
     font-size: $font-size - 1px
 
   td
     padding: 9px 8px 0
-    border-bottom: none
+    border-bottom: 1px solid $color-border-light
+    border-left: 1px solid $color-border-light
+
+  th:first-child, td:first-child
+    border-left: none;
+
+  td.code
+    border-bottom: none;
